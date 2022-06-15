@@ -1,0 +1,54 @@
+h2{
+    text-align: center;
+}
+
+.experience_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+.experience_container>div{
+    background: var(--color-bg-variant);
+    padding: 2rem 2rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+.experience_container>div:hover{
+    background: transparent;
+    border-color: var(--color-primary-variant);
+    cursor: default;
+}
+.experience_container>div h3{
+    text-align: center;
+    color: var(--color-primary);
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+.experience_content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+    gap: 2rem;
+}
+.details{
+    display: flex;
+    gap: 1rem;
+}
+.experience_icon{
+    color: var(--color-primary);
+    margin-top: 6px;
+}
+
+
+
+@media screen and (max-width:600px){}
+
+@media screen and (max-width:600px){
+    #experience{
+        margin-top: 20rem;
+    }
+    .experience_container{
+        grid-template-columns: 1fr;
+    }
+}
